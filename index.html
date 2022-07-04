@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Search:</h3>
+<div class="film-search">
+    <div class="film-search-nameFilm">
+        <div class="film-search-nameFilm-title">Title:</div>
+        <div class="film-search-nameFilm-input"><input id="filmTitle" value="lion"></div>
+    </div>
+        
+
+    <div class="film-type">
+        <div>
+            <div class="film-type-title">Type:</div>
+        </div>
+        <div class="film-type-select">
+            <select id="filmType"> 
+                <option value="movie" selected>Movie</option>
+                <option value="series">Select</option>
+                <option value="episode">Episode</option>
+            </select>
+        </div>
+    
+    </div>
+    
+    <div class="btnSearch">
+        <button id="search">Search</button>
+    </div>
+    
+</div>
+
+<div>
+    <h3>Films:</h3>
+</div>
+
+<div class="film-container">
+    
+    <div class="film-container_item">
+        <div class="film-container_item-image">
+            <img src="" alt="">
+        </div>
+
+        <div class="film-container_item-info">
+            <div class="film-container_item-info-type">movie</div>
+            <div class="film-container_item-info-title"></div>
+            <div class="film-container_item-info-year"></div>
+            <div class="film-container_item-info-details"><button>Details</button></div>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="myModal" class="modal">
+
+    <!-- Модальное содержание -->
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <div id="about-film">
+
+            <h3>Film info:</h3>
+        
+            <div class="about-film-info">
+                <div class="about-film-info-image">
+                    <img src="" alt="">
+                </div>
+        
+            <div class="about-film-info-describe">
+                <div class="about-film-info-describe-title">
+                    <div class="about-film-info-describe-title-header">Title:</div>
+                    <div class="about-film-info-describe-title-name"></div>
+                </div>
+        
+                <div class="about-film-info-released">
+                    <div class="about-film-info-released-header">Released:</div>
+                    <div class="about-film-info-released-date"></div>
+                </div>
+        
+                <div class="about-film-info-genre">
+                    <div class="about-film-info-genre-header">Genre:</div>
+                    <div class="about-film-info-genre-type"></div>
+                </div>
+        
+                <div class="about-film-info-country">
+                    <div class="about-film-info-country-header">Country:</div>
+                    <div class="about-film-info-country-name"></div>
+                </div>
+        
+                <div class="about-film-info-director">
+                    <div class="about-film-info-director-header">Director:</div>
+                    <div class="about-film-info-director-person"></div>
+                </div>
+        
+                <div class="about-film-info-writer">
+                    <div class="about-film-info-writer-header">Writer:</div>
+                    <div class="about-film-info-writer-person"></div>
+                </div>
+        
+                <div class="about-film-info-actors">
+                    <div class="about-film-info-actors-header">Actors:</div>
+                    <div class="about-film-info-actors-group"></div>
+                </div>
+        
+                <div class="about-film-info-awards">
+                    <div class="about-film-info-awards-header">Awards:</div>
+                    <div class="about-film-info-awards-item"></div>
+                </div>
+        
+            </div>
+        
+            </div>
+        
+        </div>
+
+    </div>
+
+</div>
+
+<div class="paginator">
+    <button id="paginatorPrev" class="prev" disabled>Prev</button>
+    <button id="paginatorNext" class="next">Next</button>
+</div>
+
+
+
+<script src="script.js"></script>    
+</body>
+</html>
